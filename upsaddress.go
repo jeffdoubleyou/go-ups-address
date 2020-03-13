@@ -46,6 +46,19 @@ func (a *AddressAPI) Timeout(timeout ...int) int {
 	return a.client.Timeout()
 }
 
+func (s *AddressAPI) NewAddress(address map[string]string) *models.Address {
+	return &models.Address{
+		AddressLine1:       address["AddressLine1"],
+		AddressLine2:       address["AddressLine2"],
+		AddressLine3:       address["AddressLine3"],
+		City:               address["City"],
+		StateProv:          address["StateProv"],
+		PostalCode:         address["PostalCode"],
+		PostalCodeExtended: address["PostalCodeExtended"],
+		CountryCode:        address["CountryCode"],
+	}
+}
+
 func (a *AddressAPI) ValidateAddress(address *models.Address) (result *AddressValidationResult, err error) {
 	addressKeyFormat := &models.AddressKeyFormat{
 		AddressLine:         []string{address.AddressLine1, address.AddressLine2, address.AddressLine3},
