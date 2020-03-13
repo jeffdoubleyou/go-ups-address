@@ -1,6 +1,8 @@
 # go-ups-address
 Golang library for validating addresses with UPS API
 
+[![GoDoc](https://godoc.org/github.com/jeffdoubleyou/go-ups-address?status.svg)](https://godoc.org/github.com/jeffdoubleyou/go-ups-address)
+
 ## Usage
 
 ```
