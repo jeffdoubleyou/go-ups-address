@@ -45,3 +45,22 @@ func main() {
 
 }
 ```
+
+### Available Address Fields
+
+```
+type Address struct {
+	AddressLine1       string
+	AddressLine2       string
+	AddressLine3       string
+	City               string
+	StateProv          string
+	PostalCode         string
+	PostalCodeExtended string
+	AddressType        string
+	CountryCode        string
+	Classification     string
+}
+```
+
+
