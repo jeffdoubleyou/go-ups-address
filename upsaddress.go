@@ -17,9 +17,10 @@ package UPSAddress
 import (
 	"encoding/json"
 	"fmt"
-	"go-ups-address/UPSClient"
-	"go-ups-address/models"
 	"strconv"
+
+	"github.com/jeffdoubleyou/go-ups-address/UPSClient"
+	"github.com/jeffdoubleyou/go-ups-address/models"
 )
 
 type AddressAPI struct {
