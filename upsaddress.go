@@ -139,6 +139,7 @@ func (r *AddressValidationResult) Address() *models.Address {
 			PostalCode:         candidate.PostcodePrimaryLow,
 			PostalCodeExtended: candidate.PostcodeExtendedLow,
 			CountryCode:        candidate.CountryCode,
+			Classification:     r.XAVResponse.XAVResponse.Candidate[0].AddressClassification.Description,
 		}
 
 		if len(candidate.AddressLine) >= 2 {

@@ -27,7 +27,6 @@ type Address struct {
 	StateProv          string
 	PostalCode         string
 	PostalCodeExtended string
-	AddressType        string
 	CountryCode        string
 	Classification     string
 }
